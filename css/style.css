@@ -393,3 +393,37 @@ h3 {
     border-radius: 1rem;
     font-size: 2.2rem;
 }
+
+/** Footer **/
+.footer {
+    display: block;
+    text-align: center;
+    background-color: #1C58AE;
+    margin: 0;
+    max-width: 100%;
+    color: var(--blanco);
+    padding: 0 4rem;
+}
+.footer-terminos a {
+    text-align: center;
+}
+.footer-terminos a {
+    color: var(--blanco);
+}
+.footer-imagenes:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-terminos {
+        width: 20rem;
+    }
+}
+
+
+
