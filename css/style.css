@@ -195,3 +195,102 @@ h3 {
 }
 
 
+
+
+/* Quienes Somos */
+.quienessomos {
+    display: grid;
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--grisSemi);
+    gap: 2rem;
+}
+.quienessomos-contenido {
+    grid-row-start: 0;
+    grid-row-end: 1;
+    text-align: center;
+    padding-top: 5rem;
+}
+.quienessomos-video {
+    padding: 20rem 20rem;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: center;
+}
+.quienessomos-video:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .quienessomos {
+        padding: 15rem 0;
+        grid-template-rows: none;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+    }
+    .quienessomos-contenido {
+        text-align: initial;
+    }
+    .quienessomos-video {
+        grid-row-start: 0;
+        grid-row-end: 1;
+    }
+    .quienessomos-video {
+        padding: 20rem 15rem;
+    }
+    .quienessomos-contenido-titulo {
+        font-size: 6rem;
+        color: #1C58AE;
+    }
+    .quienessomos-contenido-texto {
+        font-size: 3rem;
+    }
+    
+}
+/* Beneficios */
+
+.beneficios {
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--grisSemi);
+}
+.beneficios-contenido {
+    padding-top: 5rem;
+}
+
+.beneficios-contenido-titulo {
+    text-align: center;
+}
+.beneficios-contenido-lista {
+    list-style: none;
+}
+@media (min-width: 768px) {
+    .beneficios {
+        padding: 15rem 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+    }
+    .beneficios-contenido-titulo {
+        font-size: 6rem;
+        text-align: initial;
+        color: #1C58AE;
+
+    }
+    .beneficios-contenido-lista {
+        font-size: 3rem;
+        list-style: none;
+    }
+    .beneficios-imagen img{
+        padding-top: 12rem;
+    }
+    .beneficios-contenido-lista-contenido {
+        display: flex;
+        align-items: initial;
+        padding-bottom: 4rem;
+    }
+    .beneficios-contenido-lista-contenido img {
+        width: 3.2rem;
+        height: 3.2rem;
+        
+    }
+}
+
