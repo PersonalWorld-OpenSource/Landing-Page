@@ -1,0 +1,197 @@
+/* Variables */
+:root {
+    --blanco: white;
+    --dorado: #FFB800;
+    --negro: rgb(0, 0, 0);
+    --gris: #D8D8D8;
+    --grisOscuro: #373739;
+    --grisSemi: #565657;
+    --marron: #603813;
+    --mon: 'Montserrat', sans-serif;
+    --rob: 'Roboto Slab';
+}
+
+
+/* Globales*/
+img {
+    max-width: 100%;
+}
+ html {
+     font-size: 62.5%;
+     box-sizing: border-box;
+ }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+ }
+body {
+    font-size: 1.6rem;
+    color: var(--negro);
+    background: var(--blanco);
+    font-family: var(--rob);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    font-family: var(--mon);
+    font-weight: 800;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3.0rem;
+}
+/* Contenido Global*/
+.contenedor {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+/* Header */
+.header {
+    display: block;
+    text-align: center;
+}
+.header a {
+    color: var(--blanco);
+    font-family: var(--rob);
+    font-weight: 700;
+}
+.header-menu a {
+    padding: 0 2rem;
+    display: block;
+}
+.header-logo {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+.header-menu {
+    font-size: 2.5rem;
+}
+.header-menu a {
+    padding-bottom: 1rem;
+}
+.header-menu a:last-of-type {
+    padding-bottom: 0rem;
+}
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    .header-menu a {
+        display: inline;
+    }
+    .header-menu a:last-of-type {
+        padding-right: 0;
+    }
+    .header-logo {
+        font-size: 3.6rem;
+        font-weight: 400;
+    }
+    .header-menu {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+}
+
+
+/* Presentacion */
+.overlay {
+    background: rgb(96,56,19);
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.404) 100%, rgba(96, 56, 19, 0.192) 100%);
+    height: 130rem;
+}
+.header-presentacion {
+    background: url(../img/abogado.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 130rem;
+    
+}
+.presentacion-contenido-boton:hover {
+    cursor: pointer;
+    padding: 2rem 4rem;
+    font-size: 2.5rem ;
+}
+.presentacion {
+    color: var(--blanco);
+    padding-top: 5rem;
+    text-align: center;
+}
+.presentacion-contenido-texto {
+    width: auto;
+    font-size: 2.5rem;
+    font-family: var(--rob);
+    font-weight: 300;
+}
+.presentacion-contenido-boton {
+    background-color:  var(--dorado);
+    border: none;
+    border-radius: 30rem;
+    padding: 2rem 4rem;
+    font-family: var(--mon);
+    color:white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 5px -1px rgba(255,184,0,0.8);
+}
+@media (min-width: 768px) {
+    .header-presentacion {
+        height: zrem;
+    }
+    .overlay {
+        height: 130rem;
+    }
+    .presentacion {
+        text-align: initial;
+    }
+    .presentacion-imagen {
+        display: flex;
+        justify-content: left;
+    }
+    .presentacion-contenido {
+        width: 80rem;
+        padding-top: 20rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .presentacion-contenido-boton {
+        margin-left: 18rem;
+        margin-bottom: 0;
+    }
+    .presentacion-contenido-imagen img {
+        max-width: 20rem;
+        max-height: 6rem;
+    }
+    .presentacion-contenido-imagen {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .presentacion-ingresar {
+        padding-top: 2rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .presentacion-ingresar a {
+        padding: 2rem 4rem;
+        background-color: #1C58AE;
+        border-radius: 1rem;
+        font-size: 2.4rem;
+        color: white;
+        font-family: var(--mon);
+        font-weight: 700;
+    }
+}
+
+
