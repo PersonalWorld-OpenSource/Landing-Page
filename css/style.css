@@ -147,7 +147,7 @@ h3 {
 }
 @media (min-width: 768px) {
     .header-presentacion {
-        height: zrem;
+        height: 130rem;
     }
     .overlay {
         height: 130rem;
@@ -357,7 +357,7 @@ h3 {
     .planes-c {
         display: grid;
     grid-template-columns: auto auto;
-    grid-row: auto auto;
+    grid-row: auto;
     justify-content: center;
     gap: 7rem;
     }
@@ -365,7 +365,7 @@ h3 {
 
 /* Abogados */
 .abogado-contenido {
-    margin: 4rem 0;
+    padding: 15rem 0;
     display: flex;
     justify-content: center;
     align-content: center;
