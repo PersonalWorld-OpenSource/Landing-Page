@@ -393,7 +393,22 @@ h3 {
     border-radius: 1rem;
     font-size: 2.2rem;
 }
+/** Video **/
+.video {
+    display:  flex;
+    gap: 20rem;
+    justify-content: center;
+    padding: 15rem 0;
+}
 
+.video-contenido h4 {
+    font-size: 3.6rem;
+    color: #1C58AE;
+    font-weight: 700;
+    font-family: var(--rob);
+    text-align: center;
+    margin: 0;
+}
 /** Footer **/
 .footer {
     display: block;
@@ -424,6 +439,8 @@ h3 {
         width: 20rem;
     }
 }
+
+
 
 
 
